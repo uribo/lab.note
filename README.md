@@ -17,9 +17,9 @@ devtools::install_github("uribo/lab.note")
 
 #### From RStidio
 
-1) File -> New File -> R Markdown...
-2) From template... loading template files
-3) Choose `Laboratory note (PDF)`
+1. File -> New File -> R Markdown...
+2. From template... loading template files
+3. Choose `Laboratory note (PDF)`
 
 #### 野良Rから
 
