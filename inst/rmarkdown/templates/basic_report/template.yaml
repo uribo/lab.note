@@ -1,3 +1,4 @@
 name: Laboratory note (PDF)
-description: >
+description: > 
  Plane laboratory report.
+create_dir: false

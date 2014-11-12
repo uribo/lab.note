@@ -9,7 +9,6 @@ output:
 ---
 \fontsize{12}{18}
 
-
 ```{r global_options, include=FALSE, chace=FALSE}
 library(rmarkdown)
 library(knitr)
