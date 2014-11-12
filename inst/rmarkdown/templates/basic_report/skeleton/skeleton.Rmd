@@ -6,6 +6,7 @@ output:
   pdf_document:
     toc: true
     highlight: pygments
+    fig_caption: true
 ---
 \fontsize{12}{18}
 
