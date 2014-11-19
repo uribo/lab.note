@@ -1,0 +1,45 @@
+---
+title: "Change the title"
+author: "Shinya Uryu"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+header-includes:
+   - \usepackage{lscape}
+   - \usepackage{zxjatype}
+   - \setmainfont{Helvetica}
+   - \setjamainfont{Hiragino Kaku Gothic Pro}  
+output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: true
+    toc_depth: 3
+    highlight: pygments
+---
+\fontsize{12}{18}
+\hrulefill
+
+```{r global_options, include=FALSE, chace=FALSE}
+library(rmarkdown)
+library(knitr)
+### knitr chunk options ###
+opts_chunk$set(
+  chace      = FALSE,
+  echo       = FALSE,
+  warning    = FALSE,
+  message    = FALSE,
+  tidy       = TRUE,
+  fig.path   = "Figure/",
+  fig.width  = 8, 
+  fig.height = 8,
+  fig.retina = 1,
+  dpi        = 150)
+```
+
+```{r using.package, echo=TRUE}
+library(dplyr)
+library(ggplot2)
+```
+
+```{r, echo=TRUE}
+data(iris)
+head(iris)
+```
