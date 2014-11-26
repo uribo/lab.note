@@ -5,8 +5,9 @@ date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
    - \usepackage{lscape}
    - \usepackage{zxjatype}
-   - \setmainfont{Helvetica}
+   - \setmainfont{Helvetica Neue}
    - \setjamainfont{Hiragino Kaku Gothic Pro}  
+   - \setmonofont{Ricty} 
 output:
   pdf_document:
     latex_engine: xelatex

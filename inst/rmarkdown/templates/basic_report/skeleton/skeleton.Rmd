@@ -6,12 +6,17 @@ header-includes:
    - \usepackage{lscape}
 output:
   pdf_document:
+    latex_engine: xelatex
     toc: true
     toc_depth: 3
     highlight: pygments
     fig_caption: true
+mainfont: Helvetica Neue
+monofont: Ricty
 ---
 \fontsize{12}{18}
+\fontseries{b}
+\selectfont
 \hrulefill
 
 ```{r global_options, include=FALSE, chace=FALSE}
