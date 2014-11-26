@@ -9,7 +9,7 @@ output:
     latex_engine: xelatex
     toc: true
     toc_depth: 3
-    highlight: pygments
+    highlight: tango
     fig_caption: true
 mainfont: Helvetica Neue
 monofont: Ricty
