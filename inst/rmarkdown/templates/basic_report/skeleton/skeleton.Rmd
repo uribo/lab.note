@@ -4,6 +4,7 @@ author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
    - \usepackage{lscape}
+   - \usepackage{soul}
 output:
   pdf_document:
     latex_engine: xelatex
@@ -39,9 +40,33 @@ opts_chunk$set(
 ```{r using.package, echo=TRUE}
 library(dplyr)
 library(ggplot2)
+library(xtable)
 ```
+
+\hl{highlight}
 
 ```{r, echo=TRUE}
 data(iris)
 head(iris)
 ```
+
+```{r, eval=FALSE}
+group_by(iris, Species) %>%
+  summarise_each(funs(mean), Sepal.Length, Sepal.Width) %>%
+  as.data.frame() %>%
+  xtable() %>%
+  print(include.rownames = F)
+```
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrr}
+  \hline
+Species & Sepal.Length & Sepal.Width \\ 
+  \hline
+setosa & 5.01 & 3.43 \\ 
+  versicolor & 5.94 & 2.77 \\ 
+  virginica & 6.59 & 2.97 \\ 
+   \hline
+\end{tabular}
+\end{table}
