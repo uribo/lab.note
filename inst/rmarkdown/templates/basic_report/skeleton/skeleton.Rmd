@@ -37,7 +37,7 @@ opts_chunk$set(
   dpi        = 150)
 ```
 
-```{r using.package, echo=TRUE}
+```{r using_package, echo=TRUE}
 library(dplyr)
 library(ggplot2)
 library(xtable)

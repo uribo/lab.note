@@ -9,7 +9,7 @@ header-includes:
    - \setjamainfont{Hiragino Kaku Gothic Pro}  
    - \setmonofont{Ricty}
    - \usepackage{soul}
-   - \newcommand{\HL}[1]{\hl{\mbox{#1}}}
+   - \newcommand{\HLT}[1]{\hl{{\bf \mbox{#1}}}}
 output:
   pdf_document:
     latex_engine: xelatex
@@ -37,13 +37,13 @@ opts_chunk$set(
   dpi        = 150)
 ```
 
-```{r using.package, echo=TRUE}
+```{r using_package, echo=TRUE}
 library(dplyr)
 library(ggplot2)
 library(xtable)
 ```
 
-\HL{highlight}
+\HLT{highlight}
 
 ```{r, echo=TRUE}
 data(iris)
