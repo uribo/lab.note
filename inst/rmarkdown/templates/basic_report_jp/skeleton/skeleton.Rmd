@@ -13,9 +13,10 @@ header-includes:
 output:
   pdf_document:
     latex_engine: xelatex
-    toc: true
+    toc: yes
     toc_depth: 3
     highlight: tango
+    fig_caption: yes
 ---
 \fontsize{12}{18}
 \hrulefill

@@ -8,10 +8,10 @@ header-includes:
 output:
   pdf_document:
     latex_engine: xelatex
-    toc: true
+    toc: yes
     toc_depth: 3
     highlight: tango
-    fig_caption: true
+    fig_caption: yes
 mainfont: Helvetica Neue
 monofont: Ricty
 ---
