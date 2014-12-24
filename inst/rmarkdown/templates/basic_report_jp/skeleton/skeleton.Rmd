@@ -9,6 +9,10 @@ header-includes:
    - \setjamainfont{Hiragino Kaku Gothic Pro}  
    - \setmonofont{Ricty}
    - \usepackage{soul}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \lhead{\slshape \rightmark}
+   - \rhead{\slshape `r format(Sys.time(), '%B %d, %Y')`}
    - \newcommand{\HLT}[1]{\hl{{\bf \mbox{#1}}}}
 output:
   pdf_document:

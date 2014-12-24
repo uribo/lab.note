@@ -5,6 +5,10 @@ date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
    - \usepackage{lscape}
    - \usepackage{soul}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \lhead{\slshape \rightmark}
+   - \rhead{\slshape `r format(Sys.time(), '%B %d, %Y')`}
 output:
   pdf_document:
     latex_engine: xelatex
