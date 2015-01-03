@@ -3,19 +3,20 @@ title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
-   - \usepackage{fourier-orns}
-   - \usepackage{lscape}
-   - \usepackage{zxjatype}
-   - \setmainfont{Helvetica Neue}
-   - \setjamainfont{Hiragino Kaku Gothic Pro}  
-   - \setmonofont{Ricty}
-   - \usepackage{soul}
-   - \usepackage{fancyhdr}
-   - \pagestyle{fancy}
-   - \lhead{\slshape \rightmark}
-   - \rhead{\slshape `r format(Sys.time(), '%B %d, %Y')`}
-   - \newcommand{\HLT}[1]{\hl{{\bf \mbox{#1}}}}
-   - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
+    - \usepackage{fancyhdr}
+    - \usepackage{fourier-orns}
+    - \usepackage{lscape}
+    - \usepackage{zxjatype}
+    - \setmainfont{Helvetica Neue}
+    - \setjamainfont{Hiragino Kaku Gothic Pro}  
+    - \setmonofont{Ricty}
+    - \usepackage{soul}
+    - \usepackage{fancyhdr}
+    - \pagestyle{fancy}
+    - \lhead{\slshape \rightmark}
+    - \rhead{\slshape \today}
+    - \newcommand{\HLT}[1]{\hl{{\bf \mbox{#1}}}}
+    - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
 output:
   pdf_document:
     latex_engine: xelatex
@@ -46,37 +47,34 @@ opts_chunk$set(
 ```
 
 ```{r using_pkg, echo = TRUE}
-library(dplyr)
-library(ggplot2)
-library(xtable)
+library(dplyr)   # A Grammar of Data Manipulation.
+library(ggplot2) # An implementation of the Grammar of Graphics.
+library(xtable)  # Export tables to LaTeX or HTML.
+library(broom)   # Convert Statistical Analysis Objects Into Tidy Data Frames.
 ```
 
 \HLT{highlight}
 
 ```{r, echo = TRUE}
-data(iris)
-head(iris)
+mtcars %>% head()
 ```
 
 ```{r, eval = FALSE}
-group_by(iris, Species) %>%
-  summarise_each(funs(mean), Sepal.Length, Sepal.Width) %>%
-  as.data.frame() %>%
+glm(am ~ wt, mtcars, family = "binomial") %>% tidy() %>%
   xtable() %>%
   print(include.rownames = F)
 ```
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{lrr}
+\begin{tabular}{lrrrr}
   \hline
-Species & Sepal.Length & Sepal.Width \\ 
+term & estimate & std.error & statistic & p.value \\ 
   \hline
-setosa & 5.01 & 3.43 \\ 
-  versicolor & 5.94 & 2.77 \\ 
-  virginica & 6.59 & 2.97 \\ 
+(Intercept) & 12.04 & 4.51 & 2.67 & 0.01 \\ 
+  wt & -4.02 & 1.44 & -2.80 & 0.01 \\ 
    \hline
 \end{tabular}
 \end{table}
 
-\hrulefill\hspace{0.2cm} {\LARGE \grimace} \hspace{0.2cm} \hrulefill
+\hrulefill\hspace{0.2cm} {\LARGE \grimace} $< Fin.$ \hspace{0.2cm} \hrulefill
