@@ -3,6 +3,7 @@ title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
+   - \usepackage{fourier-orns}
    - \usepackage{lscape}
    - \usepackage{zxjatype}
    - \setmainfont{Helvetica Neue}
@@ -23,7 +24,8 @@ output:
     fig_caption: yes
 ---
 \fontsize{12}{18}
-\hrulefill
+\selectfont
+{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}
 
 ```{r global_options, include = FALSE, chace = FALSE}
 library(rmarkdown)
@@ -75,3 +77,5 @@ setosa & 5.01 & 3.43 \\
    \hline
 \end{tabular}
 \end{table}
+
+\hrulefill\hspace{0.2cm} {\LARGE \grimace} \hspace{0.2cm} \hrulefill
