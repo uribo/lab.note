@@ -14,7 +14,7 @@ devtools::install_github("uribo/lab.note")
 
 ### Usage
 
-#### From RStidio
+#### From RStudio
 
 1. File -> New File -> R Markdown...
 2. From template... loading template files
