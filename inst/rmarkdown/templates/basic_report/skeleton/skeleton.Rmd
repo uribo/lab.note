@@ -10,6 +10,7 @@ header-includes:
     -  \pagestyle{fancy}
     -  \lhead{\slshape \rightmark}
     -  \rhead{\slshape `r format(Sys.time(), '%B %d, %Y')`}
+    - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
 output:
   pdf_document:
     latex_engine: xelatex
@@ -23,7 +24,7 @@ monofont: Ricty
 \fontsize{12}{18}
 \fontseries{b}
 \selectfont
-{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}
+\onmline
 
 ```{r global_options, include = FALSE, chace = FALSE}
 library(rmarkdown)
