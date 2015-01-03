@@ -1,5 +1,4 @@
-Lab Note
-=====
+# Lab Note
 
 ## Overview
 
@@ -31,4 +30,8 @@ rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note"
 
 RStudioでR Markdownドキュメントを新規作成するとき、いちいち標準のテンプレートを変更するのが面倒だったので、テンプレートを作ってしまえば楽だろう、という感じです。
 
-**あくまでも俺々**。
+**あくまでも俺々**。お好みで改良して使ってください。
+
+## Preview
+
+![](https://github.com/uribo/lab.note/raw/masterinst/assets/img/preview.png)
