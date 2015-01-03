@@ -3,12 +3,12 @@ title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
-   - \usepackage{lscape}
-   - \usepackage{soul}
-   - \usepackage{fancyhdr}
-   - \pagestyle{fancy}
-   - \lhead{\slshape \rightmark}
-   - \rhead{\slshape `r format(Sys.time(), '%B %d, %Y')`}
+    -  \usepackage{lscape}
+    -  \usepackage{soul}
+    -  \usepackage{fancyhdr}
+    -  \pagestyle{fancy}
+    -  \lhead{\slshape \rightmark}
+    -  \rhead{\slshape `r format(Sys.time(), '%B %d, %Y')`}
 output:
   pdf_document:
     latex_engine: xelatex
@@ -24,7 +24,7 @@ monofont: Ricty
 \selectfont
 \hrulefill
 
-```{r global_options, include=FALSE, chace=FALSE}
+```{r global_options, include = FALSE, chace = FALSE}
 library(rmarkdown)
 library(knitr)
 ### knitr chunk options ###
@@ -41,7 +41,7 @@ opts_chunk$set(
   dpi        = 150)
 ```
 
-```{r using_package, echo=TRUE}
+```{r using_pkg, echo = TRUE}
 library(dplyr)
 library(ggplot2)
 library(xtable)
@@ -49,12 +49,12 @@ library(xtable)
 
 \hl{highlight}
 
-```{r, echo=TRUE}
+```{r, echo = TRUE}
 data(iris)
 head(iris)
 ```
 
-```{r, eval=FALSE}
+```{r, eval = FALSE}
 group_by(iris, Species) %>%
   summarise_each(funs(mean), Sepal.Length, Sepal.Width) %>%
   as.data.frame() %>%

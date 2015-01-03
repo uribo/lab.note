@@ -25,7 +25,7 @@ output:
 \fontsize{12}{18}
 \hrulefill
 
-```{r global_options, include=FALSE, chace=FALSE}
+```{r global_options, include = FALSE, chace = FALSE}
 library(rmarkdown)
 library(knitr)
 ### knitr chunk options ###
@@ -42,7 +42,7 @@ opts_chunk$set(
   dpi        = 150)
 ```
 
-```{r using_package, echo=TRUE}
+```{r using_pkg, echo = TRUE}
 library(dplyr)
 library(ggplot2)
 library(xtable)
@@ -50,12 +50,12 @@ library(xtable)
 
 \HLT{highlight}
 
-```{r, echo=TRUE}
+```{r, echo = TRUE}
 data(iris)
 head(iris)
 ```
 
-```{r, eval=FALSE}
+```{r, eval = FALSE}
 group_by(iris, Species) %>%
   summarise_each(funs(mean), Sepal.Length, Sepal.Width) %>%
   as.data.frame() %>%
