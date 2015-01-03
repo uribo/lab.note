@@ -34,4 +34,4 @@ RStudioでR Markdownドキュメントを新規作成するとき、いちいち
 
 ## Preview
 
-![](https://github.com/uribo/lab.note/raw/masterinst/assets/img/preview.png)
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview.png)
