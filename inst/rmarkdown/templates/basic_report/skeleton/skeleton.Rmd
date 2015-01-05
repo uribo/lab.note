@@ -30,6 +30,7 @@ monofont: Ricty
 ```{r global_options, include = FALSE, chace = FALSE}
 library(rmarkdown)
 library(knitr)
+options(width = 90, xtable.comment = FALSE)
 ### knitr chunk options ###
 opts_chunk$set(
   chace      = FALSE,
