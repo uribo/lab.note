@@ -26,6 +26,12 @@ devtools::install_github("uribo/lab.note")
 rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note")
 ```
 
+## Template
+
+* Laboratory note
+    * for Japanese
+* Beamer for Japanese
+
 ## Motivation
 
 RStudioでR Markdownドキュメントを新規作成するとき、いちいち標準のテンプレートを変更するのが面倒だったので、テンプレートを作ってしまえば楽だろう、という感じです。
