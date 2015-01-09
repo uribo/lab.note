@@ -1,0 +1,50 @@
+---
+title: "Change the title"
+subtitle: ""
+author: "Shinya Uryu"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+header-includes:
+    - \usepackage{zxjatype}
+    - \setmainfont{Helvetica Neue}
+    - \setjamainfont{Hiragino Kaku Gothic Pro}
+output:
+  beamer_presentation:
+    fonttheme: "structurebold"
+    keep_tex: true
+    pandoc_args:
+     ["--latex-engine=xelatex"]
+---
+
+```{r child = "document_setting.Rmd"}
+```
+
+
+## R + Markdown + \LaTeX
+
+\center{
+  \Huge{= POWERFUL !!!!!}
+}
+
+## Microsoft Word or \LaTeX ?
+
+\LaTeX users significantly more often reported to enjoy their work with their respective software than Word users `r citep("10.1371/journal.pone.0115069")`.
+
+
+## \LaTeX Tips: Font size
+
+* \small{small} > \footnotesize{footnotesize} > \scriptsize{scriptsize} > \tiny{tiny}
+* \normalsize{default}
+* \large{large} < \Large{Large} < \LARGE{LARGE} < \huge{huge} < \Huge{Huge}
+
+## Reference
+
+* `r citet("10.1371/journal.pone.0115069")`
+* [Presentations with Beamer](http://rmarkdown.rstudio.com/beamer_presentation_format.html)
+
+## Sessioninfo: `r R.Version()$version.string`
+
+### Non base attached Package
+
+```{r}
+sessionInfo() %$% otherPkgs %>% names
+```
