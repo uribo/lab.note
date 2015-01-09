@@ -1,0 +1,26 @@
+```{r global_options, include = FALSE, chace = FALSE}
+### R options ###
+# see help(options)
+options(width = 60, xtable.comment = FALSE)
+### knitr chunk options ###
+opts_chunk$set(
+  chace      = FALSE,
+  comment    = "",
+  echo       = FALSE,
+  warning    = FALSE,
+  message    = FALSE,
+  tidy       = TRUE,
+  size       = 'large',
+  fig.path   = "Figure/",
+  fig.width  = 8, 
+  fig.height = 8,
+  fig.retina = 1,
+  dpi        = 150)
+### Using Packages ###
+library(magrittr)
+library(dplyr)
+library(knitcitations) # https://github.com/cboettig/knitcitations
+library(ggplot2)
+### knitcitations options ###
+cite_options(max.names = 1)
+```
