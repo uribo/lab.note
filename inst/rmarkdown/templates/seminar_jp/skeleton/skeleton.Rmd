@@ -4,9 +4,27 @@ subtitle: ""
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
+# define
+    - \definecolor{Black1}{RGB}{43,40,40}
+    - \definecolor{Blue1}{RGB}{48, 122, 190}
+    - \definecolor{Blue2}{RGB}{99, 151, 205}
+    - \definecolor{Grey1}{RGB}{164, 173, 185}
+# using pkg, setup
     - \usepackage{zxjatype}
     - \setmainfont{Helvetica Neue}
     - \setjamainfont{Hiragino Kaku Gothic Pro}
+    - \setbeamertemplate{navigation symbols}{}
+    - \hypersetup{colorlinks = true, linkcolor = blue, citecolor = red, urlcolor = Black1}
+    - \setbeamerfont{title}{size = \fontsize{38}{10}}
+    - \setbeamercolor{title}{fg = Blue1}
+    - \setbeamerfont{subtitle}{size = \large}
+    - \setbeamercolor{subtitle}{fg = Blue2}
+    - \setbeamercolor{author}{fg = Black1}
+    - \setbeamercolor{normal text}{fg = Black1}
+    - \setbeamerfont{date}{series = \itshape}
+    - \setbeamercolor{date}{fg = Grey1}
+    - \setbeamercolor{frametitle}{fg = Blue1}
+    - \renewcommand{\baselinestretch}{1.2}
 output:
   beamer_presentation:
     fonttheme: "structurebold"
@@ -17,7 +35,6 @@ output:
 
 ```{r child = "document_setting.Rmd"}
 ```
-
 
 ## R + Markdown + \LaTeX
 
@@ -35,6 +52,10 @@ output:
 * \small{small} > \footnotesize{footnotesize} > \scriptsize{scriptsize} > \tiny{tiny}
 * \normalsize{default}
 * \large{large} < \Large{Large} < \LARGE{LARGE} < \huge{huge} < \Huge{Huge}
+
+## \LaTeX Tips
+
+Link: \href{http://github.com/uribo/lab.note}{lab.note} package
 
 ## Reference
 
