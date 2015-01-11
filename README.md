@@ -38,6 +38,12 @@ RStudioでR Markdownドキュメントを新規作成するとき、いちいち
 
 **あくまでも俺々**。お好みで改良して使ってください。
 
+こういう使い方が良いかも。
+
+<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>rmarkdownのPDFテンプレート作るの、<a href="https://twitter.com/u_ribo">@u_ribo</a> さんのlab.noteパッケージをフォークしてinst以下のskeleton.Rmdを書き換えるのがお手軽で良い <a href="https://t.co/SZIs1d3pfL">https://t.co/SZIs1d3pfL</a> <a href="https://twitter.com/hashtag/%E3%83%A1%E3%83%A2%E3%83%B3?src=hash">#メモン</a></p>&mdash; キュアビジネス (@dichika) <a href="https://twitter.com/dichika/status/550850004139515904">January 2, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
 ## Preview
 
 Basic report
