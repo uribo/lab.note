@@ -15,6 +15,7 @@ header-includes:
     - \setjamainfont{Hiragino Kaku Gothic Pro}
     - \setbeamertemplate{navigation symbols}{}
     - \hypersetup{colorlinks = true, linkcolor = blue, citecolor = red, urlcolor = Black1}
+# set font
     - \setbeamerfont{title}{size = \fontsize{38}{10}}
     - \setbeamercolor{title}{fg = Blue1}
     - \setbeamerfont{subtitle}{size = \large}
@@ -24,6 +25,7 @@ header-includes:
     - \setbeamerfont{date}{series = \itshape}
     - \setbeamercolor{date}{fg = Grey1}
     - \setbeamercolor{frametitle}{fg = Blue1}
+# new command
     - \renewcommand{\baselinestretch}{1.2}
 output:
   beamer_presentation:
