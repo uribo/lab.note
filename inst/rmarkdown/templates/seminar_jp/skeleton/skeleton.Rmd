@@ -15,8 +15,8 @@ header-includes:
     - \setjamainfont{Hiragino Kaku Gothic Pro}
     - \setbeamertemplate{navigation symbols}{}
     - \hypersetup{colorlinks = true, linkcolor = blue, citecolor = red, urlcolor = Black1}
-    - \usepackage{fontspec} # require installed FontAwesome
-    - \usepackage{fontawesome}
+    - \usepackage{fontspec}
+    - \usepackage{fontawesome} # require installed FontAwesome
 # set font
     - \setbeamerfont{title}{size = \fontsize{38}{10}}
     - \setbeamercolor{title}{fg = Blue1}
