@@ -15,6 +15,8 @@ header-includes:
     - \pagestyle{fancy}
     - \lhead{\slshape \rightmark}
     - \rhead{\slshape \today}
+    - \usepackage{fontspec}
+    - \usepackage{fontawesome} # require installed FontAwesome
     - \newcommand{\HLT}[1]{\hl{{\bf \mbox{#1}}}}
     - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
 output:
@@ -54,28 +56,18 @@ library(xtable)  # Export tables to LaTeX or HTML.
 library(broom)   # Convert Statistical Analysis Objects Into Tidy Data Frames.
 ```
 
-\HLT{highlight}
+\HLT{\faStarEmpty highlight \faStar}
 
 ```{r, echo = TRUE}
 mtcars %>% head()
 ```
 
-```{r, eval = FALSE}
+```{r, eval = TRUE, results = 'asis'}
 glm(am ~ wt, mtcars, family = "binomial") %>% tidy() %>%
   xtable() %>%
   print(include.rownames = F)
 ```
 
-\begin{table}[ht]
-\centering
-\begin{tabular}{lrrrr}
-  \hline
-term & estimate & std.error & statistic & p.value \\ 
-  \hline
-(Intercept) & 12.04 & 4.51 & 2.67 & 0.01 \\ 
-  wt & -4.02 & 1.44 & -2.80 & 0.01 \\ 
-   \hline
-\end{tabular}
-\end{table}
+\flushright{Enjoy \faCoffee}
 
 \hrulefill\hspace{0.2cm} {\LARGE \grimace} $< Fin.$ \hspace{0.2cm} \hrulefill

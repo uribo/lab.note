@@ -72,3 +72,5 @@ Link: \href{http://github.com/uribo/lab.note}{lab.note} package
 ```{r}
 sessionInfo() %$% otherPkgs %>% names
 ```
+
+\flushright{Enjoy \faCoffee}
