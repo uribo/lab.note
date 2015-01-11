@@ -40,4 +40,10 @@ RStudioでR Markdownドキュメントを新規作成するとき、いちいち
 
 ## Preview
 
+Basic report
+
 ![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview.png)
+
+Seminar (Beamer)
+
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_seminar_jp.png)
