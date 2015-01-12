@@ -1,7 +1,7 @@
 Package: lab.note
 Type: Package
 Title: Create laboratory note and report using rmarkdown.
-Version: 0.2.3
+Version: 0.2.4
 Date: 2015-01-12
 Author: Shinya Uryu
 Maintainer: Shinya Uryu <suika1127@gmail.com>

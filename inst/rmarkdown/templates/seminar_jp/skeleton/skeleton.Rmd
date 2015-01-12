@@ -11,13 +11,11 @@ header-includes:
     - \definecolor{Grey1}{RGB}{164, 173, 185}
 # using pkg, setup
     - \usepackage{zxjatype}
-    - \setmainfont{Helvetica Neue}
     - \setjamainfont{Hiragino Kaku Gothic Pro}
-    - \setbeamertemplate{navigation symbols}{}
-    - \hypersetup{colorlinks = true, linkcolor = blue, citecolor = red, urlcolor = Black1}
     - \usepackage{fontspec}
     - \usepackage{fontawesome} # require installed FontAwesome
 # set font
+    - \setbeamertemplate{navigation symbols}{}
     - \setbeamerfont{title}{size = \fontsize{38}{10}}
     - \setbeamercolor{title}{fg = Blue1}
     - \setbeamerfont{subtitle}{size = \large}
@@ -35,6 +33,11 @@ output:
     keep_tex: true
     pandoc_args:
      ["--latex-engine=xelatex"]
+mainfont: Helvetica Neue
+monofont: Ricty
+linkcolor: blue
+urlcolor: red
+citecolor: Black1
 ---
 
 ```{r child = "document_setting.Rmd"}
@@ -69,7 +72,7 @@ Link: \href{http://github.com/uribo/lab.note}{lab.note} package
 
 ### Non base attached Package
 
-```{r}
+```{r, size='tiny'}
 sessionInfo() %$% otherPkgs %>% names
 ```
 

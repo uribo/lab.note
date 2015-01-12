@@ -7,12 +7,9 @@ header-includes:
     - \usepackage{fourier-orns}
     - \usepackage{lscape}
     - \usepackage{soul}
-    - \usepackage{fancyhdr}
     - \pagestyle{fancy}
-    - \lhead{\slshape \rightmark}
-    - \rhead{\slshape \today}
-    - \usepackage{fontspec}
-    - \usepackage{fontawesome} # require installed FontAwesome
+    - \lhead{\slshape \rightmark} \rhead{\slshape \today}
+    - \usepackage{fontspec, fontawesome} # require installed FontAwesome
     - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
 output:
   pdf_document:

@@ -7,16 +7,11 @@ header-includes:
     - \usepackage{fourier-orns}
     - \usepackage{lscape}
     - \usepackage{zxjatype}
-    - \setmainfont{Helvetica Neue}
     - \setjamainfont{Hiragino Kaku Gothic Pro}  
-    - \setmonofont{Ricty}
     - \usepackage{soul}
-    - \usepackage{fancyhdr}
     - \pagestyle{fancy}
-    - \lhead{\slshape \rightmark}
-    - \rhead{\slshape \today}
-    - \usepackage{fontspec}
-    - \usepackage{fontawesome} # require installed FontAwesome
+    - \lhead{\slshape \rightmark} \rhead{\slshape \today}
+    - \usepackage{fontspec, fontawesome} # require installed FontAwesome
     - \newcommand{\HLT}[1]{\hl{{\bf \mbox{#1}}}}
     - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
 output:
@@ -26,6 +21,8 @@ output:
     toc_depth: 3
     highlight: tango
     fig_caption: yes
+mainfont: Helvetica Neue
+monofont: Ricty
 ---
 \fontsize{12}{18}
 \selectfont
