@@ -6,6 +6,7 @@ date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
 # define
     - \definecolor{Black1}{RGB}{43,40,40}
+    - \definecolor{White1}{RGB}{255, 255, 250}
     - \definecolor{Blue1}{RGB}{48, 122, 190}
     - \definecolor{Blue2}{RGB}{99, 151, 205}
     - \definecolor{Grey1}{RGB}{164, 173, 185}
@@ -14,7 +15,12 @@ header-includes:
     - \setjamainfont{Hiragino Kaku Gothic Pro}
     - \usepackage{fontspec}
     - \usepackage{fontawesome} # require installed FontAwesome
+## comment out when if you using image for slide background 
+#   - \usebackgroundtemplate{
+#       \includegraphics[width = \paperwidth, height = \paperheight]{...png}
+#     }
 # set font
+    - \setbeamercolor{background canvas}{bg = White1}
     - \setbeamertemplate{navigation symbols}{}
     - \setbeamerfont{title}{size = \fontsize{38}{10}}
     - \setbeamercolor{title}{fg = Blue1}
