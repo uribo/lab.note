@@ -4,24 +4,23 @@ subtitle: ""
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
-# define
+# define macro
     - \definecolor{Black1}{RGB}{43,40,40}
     - \definecolor{White1}{RGB}{255, 255, 250}
     - \definecolor{Blue1}{RGB}{48, 122, 190}
     - \definecolor{Blue2}{RGB}{99, 151, 205}
     - \definecolor{Grey1}{RGB}{164, 173, 185}
-# using pkg, setup
+# using package, setup
     - \usepackage{zxjatype}
     - \setjamainfont{Hiragino Kaku Gothic Pro}
     - \usepackage{fontspec}
     - \usepackage{fontawesome} # require installed FontAwesome
 ## comment out when if you using image for slide background 
-#   - \usebackgroundtemplate{
-#       \includegraphics[width = \paperwidth, height = \paperheight]{...png}
-#     }
-# set font
+#   - \usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{...png}}
+# set beamer theme
     - \setbeamercolor{background canvas}{bg = White1}
     - \setbeamertemplate{navigation symbols}{}
+    - \setbeamertemplate{itemize items}{\textcolor{Blue2}{\faCaretRight}}
     - \setbeamerfont{title}{size = \fontsize{38}{10}}
     - \setbeamercolor{title}{fg = Blue1}
     - \setbeamerfont{subtitle}{size = \large}
@@ -52,8 +51,22 @@ citecolor: Black1
 ## R + Markdown + \LaTeX
 
 \center{
-  \Huge{= POWERFUL \faPlane}
+  \Huge{= POWERFUL \faRocket}
 }
+
+## Beamer!
+
+\begin{columns}[T]
+  \begin{column}[T]{6cm}
+    \textbf{Beamer} is a \LaTeX document class for creating slides for presentations.
+    \begin{block}{Demo code}
+      \small{qplot(Sepal.Length, Petal.Length, data = iris, colour = Species)}
+    \end{block}
+  \end{column}
+  \begin{column}[T]{5.5cm}
+    %\includegraphics[height = 6cm]{demo_iris_plot.png}
+  \end{column}
+\end{columns}
 
 ##\faFile Microsoft Word or \LaTeX ?
 
@@ -73,12 +86,13 @@ Link: \href{http://github.com/uribo/lab.note}{lab.note} package
 
 * `r citet("10.1371/journal.pone.0115069")`
 * [Presentations with Beamer](http://rmarkdown.rstudio.com/beamer_presentation_format.html)
+* [LaTeX/Presentations - Wikibooks, open books for an open world](http://en.wikibooks.org/wiki/LaTeX/Presentations)
 
 ## Sessioninfo \faCogs `r R.Version()$version.string`
 
 ### Non base attached Package
 
-```{r, size='tiny'}
+```{r, size = 'tiny'}
 sessionInfo() %$% otherPkgs %>% names
 ```
 
