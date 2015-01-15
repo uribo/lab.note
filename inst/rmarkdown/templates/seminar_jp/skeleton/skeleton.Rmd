@@ -13,8 +13,7 @@ header-includes:
 # using package, setup
     - \usepackage{zxjatype}
     - \setjamainfont{Hiragino Kaku Gothic Pro}
-    - \usepackage{fontspec}
-    - \usepackage{fontawesome} # require installed FontAwesome
+    - \usepackage{fontspec, fontawesome} # require installed FontAwesome
 ## comment out when if you using image for slide background 
 #   - \usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{...png}}
 # set beamer theme

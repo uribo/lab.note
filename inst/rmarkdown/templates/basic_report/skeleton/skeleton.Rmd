@@ -27,8 +27,7 @@ monofont: Ricty
 \onmline
 
 ```{r global_options, include = FALSE, chace = FALSE}
-library(rmarkdown)
-library(knitr)
+library(rmarkdown, knitr, ggplot2)
 options(width = 90, xtable.comment = FALSE)
 ### knitr chunk options ###
 opts_chunk$set(
@@ -42,11 +41,11 @@ opts_chunk$set(
   fig.height = 8,
   fig.retina = 1,
   dpi        = 150)
+theme_set(theme_classic())
 ```
 
 ```{r using_pkg, echo = TRUE}
 library(dplyr)   # A Grammar of Data Manipulation.
-library(ggplot2) # An implementation of the Grammar of Graphics.
 library(xtable)  # Export tables to LaTeX or HTML.
 library(broom)   # Convert Statistical Analysis Objects Into Tidy Data Frames.
 ```
