@@ -12,6 +12,31 @@ GitHubから
 devtools::install_github("uribo/lab.note")
 ```
 
+### Dependence Package
+
+pls installed these packages.
+
+* **LaTeX**
+    * `fancyhdr`
+    * `fourier-orns`
+    * `lscape`
+    * `zxjatype`... for Japanese user
+    * `soul`
+    * `fancy`
+    * `fontspec`
+    * `fontawesome`
+* **R**
+    * `rmarkdown`
+    * `knitr`
+    * `ggplot2`
+    * `magrittr`
+    * `dplyr`
+    * `xtable`
+    * `broom`
+    * `knitcitations`
+    * [`ggthemr`](https://github.com/cttobin/ggthemr)
+
+
 ### Usage
 
 #### From RStudio
@@ -20,7 +45,7 @@ devtools::install_github("uribo/lab.note")
 2. From template... loading template files
 3. Choose `Laboratory note (PDF)`
 
-#### 野良Rから
+#### From console
 
 ```{r}
 rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note")
