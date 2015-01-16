@@ -44,7 +44,7 @@ urlcolor: red
 citecolor: Black1
 ---
 
-```{r child = "document_setting.Rmd"}
+```{r global_options, child = "document_setting.Rmd"}
 ```
 
 ## R + Markdown + \LaTeX

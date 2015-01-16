@@ -1,4 +1,4 @@
-```{r global_options, include = FALSE, chace = FALSE}
+```{r include = FALSE, chace = FALSE}
 ### R options ###
 # see -> help(options)
 options(width = 60, xtable.comment = FALSE)
