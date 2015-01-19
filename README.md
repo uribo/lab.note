@@ -56,6 +56,7 @@ rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note"
 * Laboratory note
     * for Japanese
 * Beamer for Japanese
+* LT presentation for Japanese
 
 ## Motivation
 
