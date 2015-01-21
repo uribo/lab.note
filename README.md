@@ -2,11 +2,13 @@
 
 ## Overview
 
-`lab.note`パッケージは[R Markdown](http://rmarkdown.rstudio.com/)を使った文書を作成する際の俺々なテンプレートです。
+`lab.note` package is `.Rmd` file template for writing reproducible document (ex report, presentation).
+
+see. [RMarkdown](http://rmarkdown.rstudio.com/)
 
 ## Installation
 
-GitHubから
+From GitHub
 
 ```{r}
 devtools::install_github("uribo/lab.note")
@@ -60,15 +62,11 @@ rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note"
 
 ## Motivation
 
-RStudioでR Markdownドキュメントを新規作成するとき、いちいち標準のテンプレートを変更するのが面倒だったので、テンプレートを作ってしまえば楽だろう、という感じです。
+The RMarkdown document when to create a new, was too lazy to change the standard template. If there is a template that reflects the setting easier, and I think that reproducibility is also increasing. 
 
-**あくまでも俺々**。お好みで改良して使ってください。
-
-こういう使い方が良いかも。
+It is a good use!
 
 <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>rmarkdownのPDFテンプレート作るの、<a href="https://twitter.com/u_ribo">@u_ribo</a> さんのlab.noteパッケージをフォークしてinst以下のskeleton.Rmdを書き換えるのがお手軽で良い <a href="https://t.co/SZIs1d3pfL">https://t.co/SZIs1d3pfL</a> <a href="https://twitter.com/hashtag/%E3%83%A1%E3%83%A2%E3%83%B3?src=hash">#メモン</a></p>&mdash; キュアビジネス (@dichika) <a href="https://twitter.com/dichika/status/550850004139515904">January 2, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 
 ## Preview
 
