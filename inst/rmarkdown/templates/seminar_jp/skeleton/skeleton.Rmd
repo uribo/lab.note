@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.2.8-1
+# Lab.note package ver. 0.2.8-2
 title: "Change the title"
 subtitle: ""
 author: "Shinya Uryu"

@@ -17,12 +17,12 @@ opts_chunk$set(
   fig.retina = 1,
   dpi        = 150)
 ### Using Packages ###
-library(magrittr)
-library(dplyr)
-library(knitcitations)
-library(ggplot2)
-library(xtable)
-library(ggthemr) # https://github.com/cttobin/ggthemr
+library("magrittr")
+library("dplyr")
+library("knitcitations")
+library("ggplot2")
+library("xtable")
+library("ggthemr") # https://github.com/cttobin/ggthemr
 ### knitcitations options ###
 cite_options(max.names = 1)
 ### ggthemr's theme ###
