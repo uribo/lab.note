@@ -1,8 +1,8 @@
 ---
-# Lab.note package ver. 0.2.9
-title: "For LT theme"
-subtitle: ""
-author: ""
+# Lab.note package ver. 0.2.10
+title: For LT \textcolor{Black1}{\faBolt} theme
+subtitle: 
+author: \faTwitter @u_ribo
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
 # define macro

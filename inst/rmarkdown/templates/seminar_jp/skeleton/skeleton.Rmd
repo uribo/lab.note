@@ -1,8 +1,8 @@
 ---
-# Lab.note package ver. 0.2.9
-title: "Change the title"
-subtitle: ""
-author: "Shinya Uryu"
+# Lab.note package ver. 0.2.10
+title: Change the title
+subtitle: 
+author: \faTwitter @u_ribo
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
 # define macro
