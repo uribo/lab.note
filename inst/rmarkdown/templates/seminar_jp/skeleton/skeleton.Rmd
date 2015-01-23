@@ -72,13 +72,13 @@ citecolor: Black1
 
 \LaTeX users significantly more often reported to enjoy their work with their respective software than Word users `r citep("10.1371/journal.pone.0115069")`.
 
-## \LaTeX Tips \faStar Font size
+## \LaTeX Tips \faStar: Font size
 
 * \small{small} > \footnotesize{footnotesize} > \scriptsize{scriptsize} > \tiny{tiny}
 * \normalsize{default}
 * \large{large} < \Large{Large} < \LARGE{LARGE} < \huge{huge} < \Huge{Huge}
 
-## \LaTeX Tips \faStar
+## \LaTeX Tips \faStar: more tips
 
 Link: \href{http://github.com/uribo/lab.note}{lab.note} package
 
