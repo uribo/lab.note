@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.2.8-2
+# Lab.note package ver. 0.2.9
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -29,7 +29,8 @@ monofont: Ricty
 
 ```{r global_options, include = FALSE, chace = FALSE}
 library("rmarkdown", "knitr", "ggplot2")
-options(width = 90, xtable.comment = FALSE)
+options(width = 90, 
+        xtable.comment = FALSE, xtable.caption.placement = "top")
 ### knitr chunk options ###
 opts_chunk$set(
   chace      = FALSE,
@@ -58,8 +59,8 @@ mtcars %>% head()
 ```
 
 ```{r, eval = TRUE, results = 'asis'}
-glm(am ~ wt, mtcars, family = "binomial") %>% tidy() %>%
-  xtable() %>%
+glm(am ~ wt, mtcars, family = "binomial") %>% tidy %>%
+  xtable(caption ="Caption") %>%
   print(include.rownames = F)
 ```
 

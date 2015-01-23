@@ -1,7 +1,8 @@
 ```{r include = FALSE, chace = FALSE}
 ### R options ###
 # see -> help(options)
-options(width = 60, xtable.comment = FALSE)
+options(width = 60, 
+        xtable.comment = FALSE, xtable.caption.placement = "top")
 ### knitr chunk options ###
 opts_chunk$set(
   chace      = FALSE,
