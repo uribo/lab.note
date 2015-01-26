@@ -1,4 +1,5 @@
 ---
+# Lab.note package ver. 0.2.11
 title: "List of Figure"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"

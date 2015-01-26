@@ -1,8 +1,8 @@
 Package: lab.note
 Type: Package
 Title: Create laboratory note and presentation using rmarkdown.
-Version: 0.2.10
-Date: 2015-01-24
+Version: 0.2.11
+Date: 2015-01-26
 Author: Shinya Uryu
 Maintainer: Shinya Uryu <suika1127@gmail.com>
 Description: Make it can reproducibe rmarkdown document.
