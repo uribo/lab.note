@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.2.10
+# Lab.note package ver. 0.2.11
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -39,11 +39,11 @@ opts_chunk$set(
   message    = FALSE,
   tidy       = TRUE,
   fig.path   = "Figure/",
-  fig.width  = 8, 
-  fig.height = 8,
+  fig.width  = 6, 
+  fig.height = 6,
   fig.retina = 1,
   dpi        = 150)
-theme_set(theme_classic())
+theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```
 
 ```{r using_pkg, echo = TRUE}
