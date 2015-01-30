@@ -55,10 +55,11 @@ rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note"
 
 ## Template
 
-* Laboratory note
+1. Laboratory note
     * for Japanese
-* Beamer for Japanese
-* LT presentation for Japanese
+2. Beamer for Japanese
+3. LT presentation for Japanese
+4. Image gallery (**New theme for 0.3.0**)
 
 ## Motivation
 
@@ -70,10 +71,14 @@ It is a good use!
 
 ## Preview
 
-Basic report
+Basic report (PDF)
 
-![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview.png)
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_basic_report.png)
 
-Seminar (Beamer)
+Seminar (PDF, Beamer)
 
 ![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_seminar_jp.png)
+
+Image gallery (HTML)
+
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_image_gallery.png)

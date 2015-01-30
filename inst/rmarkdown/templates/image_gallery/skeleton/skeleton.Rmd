@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.2.11
+# Lab.note package ver. 0.3.0
 title: "Image Gallery"
 author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -10,5 +10,5 @@ img {width: 260px; float: left}
 </style>
 
 ```{r, results = 'asis'}
-lab.note::gallery_view("/Users/uri/Dropbox/git/Data-analyses/life-history_traits_and_stool_structure/Figure/")
+lab.note::gallery_view(path = getwd())
 ```
