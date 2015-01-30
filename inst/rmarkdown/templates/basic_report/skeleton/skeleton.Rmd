@@ -1,4 +1,5 @@
 ---
+# Lab.note package ver. 0.2.11
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -27,8 +28,9 @@ monofont: Ricty
 \onmline
 
 ```{r global_options, include = FALSE, chace = FALSE}
-library(rmarkdown, knitr, ggplot2)
-options(width = 90, xtable.comment = FALSE)
+library("rmarkdown", "knitr", "ggplot2")
+options(width = 90, 
+        xtable.comment = FALSE, xtable.caption.placement = "top")
 ### knitr chunk options ###
 opts_chunk$set(
   chace      = FALSE,
@@ -37,17 +39,17 @@ opts_chunk$set(
   message    = FALSE,
   tidy       = TRUE,
   fig.path   = "Figure/",
-  fig.width  = 8, 
-  fig.height = 8,
+  fig.width  = 6, 
+  fig.height = 6,
   fig.retina = 1,
   dpi        = 150)
-theme_set(theme_classic())
+theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```
 
 ```{r using_pkg, echo = TRUE}
-library(dplyr)   # A Grammar of Data Manipulation.
-library(xtable)  # Export tables to LaTeX or HTML.
-library(broom)   # Convert Statistical Analysis Objects Into Tidy Data Frames.
+library("dplyr")   # A Grammar of Data Manipulation.
+library("xtable")  # Export tables to LaTeX or HTML.
+library("broom")   # Convert Statistical Analysis Objects Into Tidy Data Frames.
 ```
 
 \hl{\faStarEmpty highlight \faStar}
@@ -57,8 +59,8 @@ mtcars %>% head()
 ```
 
 ```{r, eval = TRUE, results = 'asis'}
-glm(am ~ wt, mtcars, family = "binomial") %>% tidy() %>%
-  xtable() %>%
+glm(am ~ wt, mtcars, family = "binomial") %>% tidy %>%
+  xtable(caption ="Caption") %>%
   print(include.rownames = F)
 ```
 
