@@ -24,6 +24,9 @@ output:
     toc_depth: 3
     highlight: tango
     fig_caption: yes
+# bibliography: bibliography.bib
+## add bibliography
+## ref) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 mainfont: Helvetica Neue
 monofont: Ricty
 ---
@@ -67,6 +70,8 @@ glm(am ~ wt, mtcars, family = "binomial") %>% tidy %>%
   xtable(caption = "Caption") %>%
   print()
 ```
+
+# References
 
 \flushright{Enjoy \faCoffee}
 

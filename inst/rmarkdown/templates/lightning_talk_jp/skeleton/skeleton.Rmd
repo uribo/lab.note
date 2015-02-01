@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.3.0
+# Lab.note package ver. 0.3.1
 title: For LT \textcolor{Black1}{\faBolt} theme
 subtitle: 
 author: \faTwitter @u_ribo
@@ -40,6 +40,9 @@ output:
     keep_tex: true
     pandoc_args:
      ["--latex-engine=xelatex"]
+# bibliography: bibliography.bib
+## add bibliography
+## ref) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 mainfont: Helvetica Neue
 monofont: Ricty
 linkcolor: blue
@@ -79,3 +82,5 @@ citecolor: Black1
     \item \huge{huge}, \Huge{Huge}
   \end{itemize}
 }
+
+## References

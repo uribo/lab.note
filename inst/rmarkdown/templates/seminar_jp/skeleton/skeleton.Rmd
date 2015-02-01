@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.3.0
+# Lab.note package ver. 0.3.1
 title: Change the title
 subtitle: 
 author: \faTwitter @u_ribo
@@ -38,6 +38,9 @@ output:
     keep_tex: true
     pandoc_args:
      ["--latex-engine=xelatex"]
+# bibliography: bibliography.bib
+## add bibliography
+## ref) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 mainfont: Helvetica Neue
 monofont: Ricty
 linkcolor: blue
@@ -97,3 +100,5 @@ sessionInfo() %$% otherPkgs %>% names
 ```
 
 \flushright{Enjoy \faCoffee}
+
+## References
