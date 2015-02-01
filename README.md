@@ -27,6 +27,7 @@ pls installed these packages.
     * `fancy`
     * `fontspec`
     * `fontawesome`
+    * `scrextend`
 * **R**
     * `rmarkdown`
     * `knitr`
@@ -37,7 +38,6 @@ pls installed these packages.
     * `broom`
     * `knitcitations`
     * [`ggthemr`](https://github.com/cttobin/ggthemr)
-
 
 ### Usage
 
