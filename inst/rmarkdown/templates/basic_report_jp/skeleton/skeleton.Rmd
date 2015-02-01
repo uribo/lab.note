@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.3.0
+# Lab.note package ver. 0.3.1
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -11,6 +11,8 @@ header-includes:
     - \setjamainfont{Hiragino Kaku Gothic Pro}  
     - \usepackage{soul}
     - \pagestyle{fancy}
+    - \usepackage{scrextend}
+    - \changefontsizes{12pt}
     - \lhead{\slshape \rightmark} \rhead{\slshape \today}
     - \usepackage{fontspec, fontawesome} # require installed FontAwesome
     - \newcommand{\HLT}[1]{\hl{{\bf \mbox{#1}}}}
@@ -25,14 +27,14 @@ output:
 mainfont: Helvetica Neue
 monofont: Ricty
 ---
-\fontsize{12}{18}
-\selectfont
 \onmline
 
 ```{r global_options, include = FALSE, chace = FALSE}
 library("rmarkdown", "knitr", "ggplot2")
 options(width = 90, 
-        xtable.comment = FALSE, xtable.caption.placement = "top")
+        xtable.comment = FALSE, xtable.caption.placement = "top",
+        xtable.include.rownames = FALSE, xtable.NA.string = "NA",
+        xtable.size = "footnotesize")
 ### knitr chunk options ###
 opts_chunk$set(
   chace      = FALSE,
@@ -63,7 +65,7 @@ mtcars %>% head()
 ```{r, eval = TRUE, results = 'asis'}
 glm(am ~ wt, mtcars, family = "binomial") %>% tidy %>%
   xtable(caption = "Caption") %>%
-  print(include.rownames = F)
+  print()
 ```
 
 \flushright{Enjoy \faCoffee}

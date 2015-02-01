@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.3.0
+# Lab.note package ver. 0.3.1
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -9,6 +9,8 @@ header-includes:
     - \usepackage{lscape}
     - \usepackage{soul}
     - \pagestyle{fancy}
+    - \usepackage{scrextend}
+    - \changefontsizes{12pt}
     - \lhead{\slshape \rightmark} \rhead{\slshape \today}
     - \usepackage{fontspec, fontawesome} # require installed FontAwesome
     - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
@@ -22,15 +24,14 @@ output:
 mainfont: Helvetica Neue
 monofont: Ricty
 ---
-\fontsize{12}{18}
-\fontseries{b}
-\selectfont
 \onmline
 
 ```{r global_options, include = FALSE, chace = FALSE}
 library("rmarkdown", "knitr", "ggplot2")
 options(width = 90, 
-        xtable.comment = FALSE, xtable.caption.placement = "top")
+        xtable.comment = FALSE, xtable.caption.placement = "top",
+        xtable.include.rownames = FALSE, xtable.NA.string = "NA",
+        xtable.size = "footnotesize")
 ### knitr chunk options ###
 opts_chunk$set(
   chace      = FALSE,
@@ -61,7 +62,7 @@ mtcars %>% head()
 ```{r, eval = TRUE, results = 'asis'}
 glm(am ~ wt, mtcars, family = "binomial") %>% tidy %>%
   xtable(caption ="Caption") %>%
-  print(include.rownames = F)
+  print()
 ```
 
 \flushright{Enjoy \faCoffee}

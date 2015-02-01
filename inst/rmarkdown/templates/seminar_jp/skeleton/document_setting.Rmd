@@ -1,8 +1,10 @@
 ```{r include = FALSE, chace = FALSE}
 ### R options ###
 # see -> help(options)
-options(width = 60, 
-        xtable.comment = FALSE, xtable.caption.placement = "top")
+options(width = 90, 
+        xtable.comment = FALSE, xtable.caption.placement = "top",
+        xtable.include.rownames = FALSE, xtable.NA.string = "NA",
+        xtable.size = "footnotesize")
 ### knitr chunk options ###
 opts_chunk$set(
   chace      = FALSE,
@@ -19,7 +21,7 @@ opts_chunk$set(
   dpi        = 150)
 ### Using Packages ###
 library("magrittr")
-library("dplyr")
+library("dplyr", warn.conflicts = FALSE)
 library("knitcitations")
 library("ggplot2")
 library("xtable")
