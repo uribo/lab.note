@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.3.1
+# Lab.note package ver. 0.3.2
 title: Change the title
 subtitle: 
 author: \faTwitter @u_ribo
