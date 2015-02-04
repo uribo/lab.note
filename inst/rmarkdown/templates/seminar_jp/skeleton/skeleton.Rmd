@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.4.0
+# Lab.note package ver. 0.4.1
 title: Change the title
 subtitle: 
 author: \faTwitter @u_ribo
@@ -8,8 +8,7 @@ header-includes:
 # define macro
     - \definecolor{Black1}{RGB}{43,40,40}
     - \definecolor{White1}{RGB}{255, 255, 250}
-    - \definecolor{Blue1}{RGB}{48, 122, 190}
-    - \definecolor{Blue2}{RGB}{99, 151, 205}
+    - \definecolor{Blue1}{RGB}{48, 122, 190} \definecolor{Blue2}{RGB}{99, 151, 205}
     - \definecolor{Grey1}{RGB}{164, 173, 185}
 # using package, setup
     - \usepackage{zxjatype}
@@ -21,14 +20,11 @@ header-includes:
     - \setbeamercolor{background canvas}{bg = White1}
     - \setbeamertemplate{navigation symbols}{}
     - \setbeamertemplate{itemize items}{\textcolor{Blue2}{\faCaretRight}}
-    - \setbeamerfont{title}{size = \fontsize{38}{10}}
-    - \setbeamercolor{title}{fg = Blue1}
-    - \setbeamerfont{subtitle}{size = \large}
-    - \setbeamercolor{subtitle}{fg = Blue2}
+    - \setbeamerfont{title}{size = \fontsize{38}{10}} \setbeamercolor{title}{fg = Blue1}
+    - \setbeamerfont{subtitle}{size = \large} \setbeamercolor{subtitle}{fg = Blue2}
     - \setbeamercolor{author}{fg = Black1}
     - \setbeamercolor{normal text}{fg = Black1}
-    - \setbeamerfont{date}{series = \itshape}
-    - \setbeamercolor{date}{fg = Grey1}
+    - \setbeamerfont{date}{series = \itshape} \setbeamercolor{date}{fg = Grey1}
     - \setbeamercolor{frametitle}{fg = Blue1}
 # new command
     - \renewcommand{\baselinestretch}{1.2}
