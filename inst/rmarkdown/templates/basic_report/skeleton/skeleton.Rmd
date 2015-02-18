@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.4.1
+# Lab.note package ver. 0.4.2
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -22,14 +22,13 @@ output:
     highlight: tango
     fig_caption: yes
 # bibliography: bibliography.bib
-## add bibliography
 ## ref) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
-mainfont: Helvetica Neue
+mainfont: Times New Roman
 monofont: Ricty
 ---
 \onmline
 
-```{r 🔧_global_options, include = FALSE, chace = FALSE}
+```{r global_options, include = FALSE, chace = FALSE}
 library("rmarkdown", "knitr", "ggplot2")
 options(width = 90, 
         xtable.comment = FALSE, xtable.caption.placement = "top",
@@ -51,7 +50,7 @@ opts_chunk$set(
 theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```
 
-```{r 📦_using_pkg, echo = TRUE}
+```{r using_pkg, echo = TRUE}
 library("dplyr", warn.conflicts = FALSE)   # A Grammar of Data Manipulation.
 library("xtable")  # Export tables to LaTeX or HTML.
 library("broom")   # Convert Statistical Analysis Objects Into Tidy Data Frames.
