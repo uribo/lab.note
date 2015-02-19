@@ -2,8 +2,10 @@ Package: lab.note
 Type: Package
 Title: Create laboratory note and presentation using rmarkdown.
 Version: 0.4.2
-Date: 2015-02-18
+Date: 2015-02-19
 Author: Shinya Uryu
-Maintainer: Shinya Uryu <suika1127@gmail.com>
+Maintainer: person("Shinya", "Uryu", email = paste("suika1127", "gmail.com", sep = "@"), role = c("aut", "cre"))
+URL: https://github.com/uribo/lab.note
+BugReports: https://github.com/uribo/lab.note/issues
 Description: Make it can reproducibe rmarkdown document.
 License: MIT
