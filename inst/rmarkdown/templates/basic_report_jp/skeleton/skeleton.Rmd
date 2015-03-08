@@ -32,7 +32,8 @@ monofont: Ricty
 \onmline
 
 ```{r global_options, include = FALSE, chace = FALSE}
-library("rmarkdown", "knitr", "ggplot2", "dplyr", "xtable")
+library("rmarkdown", "knitr", "xtable")
+library("dplyr", "ggplot2")
 options(width = 90, 
         xtable.comment = FALSE, xtable.caption.placement = "top",
         xtable.include.rownames = FALSE, xtable.NA.string = "NA",
