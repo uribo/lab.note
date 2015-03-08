@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.4.2
+# Lab.note package ver. 0.4.3
 title: For LT \textcolor{Black1}{\faBolt} theme
 subtitle: 
 author: \faTwitter @u_ribo
@@ -44,7 +44,7 @@ urlcolor: red
 citecolor: Black1
 ---
 
-```{r 🔧_global_options, child = "document_setting.Rmd"}
+```{r global_options, child = "document_setting.Rmd"}
 ```
 
 ## R + Markdown + \LaTeX

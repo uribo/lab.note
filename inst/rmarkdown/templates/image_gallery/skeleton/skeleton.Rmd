@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.4.2
+# Lab.note package ver. 0.4.3
 title: "Image Gallery"
 author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"

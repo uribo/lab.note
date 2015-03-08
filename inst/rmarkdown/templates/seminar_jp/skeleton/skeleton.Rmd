@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.4.2
+# Lab.note package ver. 0.4.3
 title: Change the title
 subtitle: 
 author: \faTwitter @u_ribo
@@ -43,7 +43,7 @@ urlcolor: red
 citecolor: Black1
 ---
 
-```{r 🔧_global_options, child = "document_setting.Rmd"}
+```{r global_options, child = "document_setting.Rmd"}
 ```
 
 ## R + Markdown + \LaTeX
@@ -90,7 +90,7 @@ Link: \href{http://github.com/uribo/lab.note}{lab.note} package
 
 ### Non base attached Package
 
-```{r ⌛_session, size = 'tiny'}
+```{r session, size = 'tiny'}
 sessionInfo() %$% otherPkgs %>% names 
 ```
 \flushright{Enjoy \faCoffee}
