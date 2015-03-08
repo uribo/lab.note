@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.4.2
+# Lab.note package ver. 0.4.3
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -29,24 +29,20 @@ monofont: Ricty
 \onmline
 
 ```{r global_options, include = FALSE, chace = FALSE}
-library("rmarkdown", "knitr", "ggplot2")
+library("rmarkdown", "knitr", "ggplot2", "dplyr", "xtable")
 options(width = 90, 
         xtable.comment = FALSE, xtable.caption.placement = "top",
         xtable.include.rownames = FALSE, xtable.NA.string = "NA",
         xtable.size = "footnotesize")
 ### knitr chunk options ###
-opts_chunk$set(
-  chace      = FALSE,
-  echo       = FALSE,
-  warning    = FALSE,
-  message    = FALSE,
-  tidy       = TRUE,
-  fig.path   = "Figure/",
-  fig.width  = 6, 
-  fig.height = 6,
-  fig.retina = 1,
-  dev        = c("pdf", "png"),
-  dpi        = 150)
+opts_chunk$set(chace    = FALSE, 
+               echo     = FALSE,
+               warning  = FALSE, 
+               message  = FALSE,
+               tidy     = TRUE,
+               fig.path = "Figure/", fig.width = 6, fig.height = 4, fig.retina = 1,
+               dev      = c("pdf", "png"),
+               dpi      = 150)
 theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```
 
