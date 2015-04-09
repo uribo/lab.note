@@ -1,4 +1,5 @@
 ---
+# Lab.note package ver. 0.5.0
 title: "Change the title"
 author: "Change your name"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -6,10 +7,9 @@ output: html_document
 ---
 
 ```{r using.pkg}
-library("ggplot2")
-library("ggthemr")
-library("shiny")
-library("DT")
 library("dplyr")
+library("ggplot2"); library("ggthemr")
+library("ggvis"); library("shiny"); library("DT")
 ```
 
+Stay gold...
