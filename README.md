@@ -29,9 +29,11 @@ pls installed these packages.
     * `fontawesome`
     * `scrextend`
 * **R**
+    * `DT`
     * `rmarkdown`
     * `knitr`
     * `ggplot2`
+    * `ggvis`
     * `magrittr`
     * `dplyr`
     * `xtable`
@@ -59,7 +61,8 @@ rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note"
     * for Japanese
 2. Beamer for Japanese
 3. LT presentation for Japanese
-4. Image gallery (**New theme for 0.3.0**)
+4. Image gallery
+5. Rpubs (**New theme for 0.5.0**)
 
 ## Motivation
 
