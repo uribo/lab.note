@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.5.0
+# Lab.note package ver. 0.5.1
 title: For LT \textcolor{Black1}{\faBolt} theme
 subtitle: 
 author: \faTwitter @u_ribo
