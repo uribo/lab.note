@@ -1,5 +1,5 @@
 ---
-# Lab.note package ver. 0.5.2
+# Lab.note package ver. 0.5.2-1
 title: "Change the title"
 author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
