@@ -85,3 +85,8 @@ Seminar (PDF, Beamer)
 Image gallery (HTML)
 
 ![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_image_gallery.png)
+
+## Another .Rmd skeleton template packages
+
+* [rmdTemplates](https://github.com/Pakillo/rmdTemplates) by [Francisco Rodriguez-Sanchez](https://github.com/Pakillo)
+* [MarkdownMS](https://github.com/MarcoDVisser/MarkdownMS) by [Marco D Visser](https://github.com/MarcoDVisser)
