@@ -40,7 +40,7 @@ options(width = 90, xtable.size = "footnotesize",
 opts_chunk$set(chace    = FALSE, echo     = FALSE, message  = FALSE, tidy     = TRUE,
                fig.path = "Figure/", fig.width = 6, fig.height = 4, fig.retina = 1,
                dev      = c("pdf", "png"), dpi      = 150)
-theme_set(theme_bw(base_size = 18, base_family = "Helvetica"))
+theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```
 
 ```{r using_pkg}
