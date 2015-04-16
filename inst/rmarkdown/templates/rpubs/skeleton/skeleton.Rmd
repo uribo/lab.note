@@ -1,12 +1,12 @@
 ---
-# Lab.note package ver. 0.5.1
+# Lab.note package ver. 0.5.2
 title: "Change the title"
-author: "Change your name"
+author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 ---
 
-```{r using.pkg}
+```{r using.pkg, echo = TRUE, message = FALSE}
 library("dplyr")
 library("ggplot2"); library("ggthemr")
 library("ggvis"); library("shiny"); library("DT")
