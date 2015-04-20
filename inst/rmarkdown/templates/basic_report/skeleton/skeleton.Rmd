@@ -56,8 +56,8 @@ mtcars %>% head()
 ```
 
 ```{r, eval = TRUE, results = 'asis'}
-glm(am ~ wt, mtcars, family = "binomial") %>% tidy %>%
-  xtable(caption ="Caption") %>%
+glm(am ~ wt, mtcars, family = "binomial") %>% tidy() %>%
+  xtable(caption = "Caption") %>%
   print()
 ```
 
