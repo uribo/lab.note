@@ -8,7 +8,7 @@ header-includes:
     - \usepackage{fourier-orns}
     - \usepackage{lscape}
     - \usepackage{zxjatype}
-    - \setjamainfont{Hiragino Kaku Gothic Pro}  
+    - \setjamainfont{Hiragino Kaku Gothic Pro}
     - \usepackage{soul}
     - \pagestyle{fancy}
     - \usepackage{scrextend}
@@ -34,10 +34,10 @@ monofont: Ricty
 ```{r global_options, include = FALSE}
 ### global options
 options(width = 90, xtable.size = "footnotesize",
-        xtable.comment          = FALSE, xtable.caption.placement = "top", 
+        xtable.comment          = FALSE, xtable.caption.placement = "top",
         xtable.include.rownames = FALSE, xtable.NA.string         = "NA")
 ### knitr chunk options ###
-opts_chunk$set(chace    = FALSE, echo      = FALSE, message  = FALSE, warning   =  FALSE, 
+opts_chunk$set(chace    = FALSE, echo      = FALSE, message  = FALSE, warning   =  FALSE,
                tidy     = TRUE,  tidy.opts = list(width.cutoff = 70),
                fig.path = "Figure/", fig.width = 6, fig.height = 4, fig.retina = 1,
                dev      = c("pdf", "png"), dpi      = 150)
@@ -47,9 +47,9 @@ theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```{r using_pkg}
 library(rmarkdown); library(knitr); library(magrittr)
 library(ggplot2); library(ggvis)
-library(dplyr, warn.conflicts = FALSE)   # A Grammar of Data Manipulation.
-library(xtable)  # Export tables to LaTeX or HTML.
-library(broom)   # Convert Statistical Analysis Objects Into Tidy Data Frames.
+library(dplyr, warn.conflicts = FALSE) # A Grammar of Data Manipulation.
+library(xtable) # Export tables to LaTeX or HTML.
+library(broom) # Convert Statistical Analysis Objects Into Tidy Data Frames.
 ```
 
 \HLT{\faStarEmpty highlight \faStar}
