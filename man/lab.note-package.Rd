@@ -15,5 +15,5 @@ License: \tab MIT\cr
 }
 \author{Shinya Uryu}
 \examples{
-rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note")
+rmarkdown::draft("MyReport.Rmd", template = "report", package = "lab.note")
 }
