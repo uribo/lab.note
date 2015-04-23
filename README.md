@@ -52,7 +52,7 @@ pls installed these packages.
 #### From console
 
 ```{r}
-rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note")
+rmarkdown::draft("MyReport.Rmd", template = "report", package = "lab.note")
 ```
 
 ## Template
@@ -62,7 +62,7 @@ rmarkdown::draft("MyReport.Rmd", template = "basic_report", package = "lab.note"
 2. Beamer for Japanese
 3. LT presentation for Japanese
 4. Image gallery
-5. Rpubs (**New theme for 0.5.0**)
+5. Rpubs
 
 ## Motivation
 
