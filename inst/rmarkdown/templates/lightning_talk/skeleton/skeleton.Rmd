@@ -1,0 +1,80 @@
+---
+# THEME: Lighting talk by lab.note ver. 0.6.0
+title: For LT \textcolor{Black1}{\faBolt} theme
+subtitle: 
+author: \faTwitter @u_ribo
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+header-includes:
+# define macro
+    - \definecolor{Black1}{RGB}{43,40,40}
+    - \definecolor{White1}{RGB}{255, 255, 250}
+    - \definecolor{Blue1}{RGB}{48, 122, 190} \definecolor{Blue2}{RGB}{99, 151, 205}
+    - \definecolor{Grey1}{RGB}{164, 173, 185}
+# using package, setup
+    - \usepackage{zxjatype}
+    - \setjamainfont{Hiragino Kaku Gothic Pro}
+    - \usepackage{fontspec, fontawesome} # require installed FontAwesome
+    - \usepackage{scrextend}
+    - \changefontsizes{22pt}
+## comment out when if you using image for slide background 
+#   - \usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{...png}}
+# set beamer theme
+    - \setbeamercolor{background canvas}{bg = White1}
+    - \setbeamertemplate{navigation symbols}{}
+    - \setbeamertemplate{itemize items}{\textcolor{Blue2}{\faCaretRight}}
+    - \setbeamerfont{title}{size = \fontsize{38}{10}} \setbeamercolor{title}{fg = Blue1}
+    - \setbeamerfont{subtitle}{size = \large} \setbeamercolor{subtitle}{fg = Blue2}
+    - \setbeamercolor{author}{fg = Black1} \setbeamercolor{normal text}{fg = Black1}
+    - \setbeamerfont{date}{series = \itshape} \setbeamercolor{date}{fg = Grey1}
+    - \setbeamercolor{frametitle}{fg = Blue1}
+# new command
+    - \renewcommand{\baselinestretch}{1.0}
+output:
+  beamer_presentation:
+    fonttheme: "structurebold"
+    keep_tex: true
+    pandoc_args:
+     ["--latex-engine=xelatex"]
+# bibliography: bibliography.bib
+## ref) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+mainfont: Helvetica Neue
+monofont: Ricty
+linkcolor: blue
+urlcolor: red
+citecolor: Black1
+---
+
+```{r [OPTIONS], child = "document_setting.Rmd"}
+```
+
+## R + Markdown + \LaTeX
+
+\center{
+  \Large{= POWERFUL \faRocket}
+}
+
+## Check font size
+
+\center{
+  Default 22 pt\\(see line 18 in this file)
+  
+  \begin{itemize}
+    \item \small{small}
+    \item \footnotesize{footnotesize}
+    \item \scriptsize{scriptsize}
+    \item \tiny{tiny}
+  \end{itemize}
+}
+
+## Check font size
+
+\center{
+  Default 22 pt\\(see line 18 in this file)
+  
+  \begin{itemize}
+    \item \Large{Large}, \LARGE{LARGE}
+    \item \huge{huge}, \Huge{Huge}
+  \end{itemize}
+}
+
+## References

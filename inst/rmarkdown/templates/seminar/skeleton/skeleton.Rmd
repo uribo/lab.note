@@ -1,6 +1,6 @@
 ---
-# Lab.note package ver. 0.5.2-2
-title: For LT \textcolor{Black1}{\faBolt} theme
+# THEME: Seminar by lab.note ver. 0.6.0
+title: Change the title
 subtitle: 
 author: \faTwitter @u_ribo
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -14,8 +14,6 @@ header-includes:
     - \usepackage{zxjatype}
     - \setjamainfont{Hiragino Kaku Gothic Pro}
     - \usepackage{fontspec, fontawesome} # require installed FontAwesome
-    - \usepackage{scrextend}
-    - \changefontsizes{22pt}
 ## comment out when if you using image for slide background 
 #   - \usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{...png}}
 # set beamer theme
@@ -24,11 +22,12 @@ header-includes:
     - \setbeamertemplate{itemize items}{\textcolor{Blue2}{\faCaretRight}}
     - \setbeamerfont{title}{size = \fontsize{38}{10}} \setbeamercolor{title}{fg = Blue1}
     - \setbeamerfont{subtitle}{size = \large} \setbeamercolor{subtitle}{fg = Blue2}
-    - \setbeamercolor{author}{fg = Black1} \setbeamercolor{normal text}{fg = Black1}
+    - \setbeamercolor{author}{fg = Black1}
+    - \setbeamercolor{normal text}{fg = Black1}
     - \setbeamerfont{date}{series = \itshape} \setbeamercolor{date}{fg = Grey1}
     - \setbeamercolor{frametitle}{fg = Blue1}
 # new command
-    - \renewcommand{\baselinestretch}{1.0}
+    - \renewcommand{\baselinestretch}{1.2}
 output:
   beamer_presentation:
     fonttheme: "structurebold"
@@ -50,31 +49,50 @@ citecolor: Black1
 ## R + Markdown + \LaTeX
 
 \center{
-  \Large{= POWERFUL \faRocket}
+  \Huge{= POWERFUL \faRocket}
 }
 
-## Check font size
+## Beamer!
 
-\center{
-  Default 22 pt\\(see line 18 in this file)
-  
-  \begin{itemize}
-    \item \small{small}
-    \item \footnotesize{footnotesize}
-    \item \scriptsize{scriptsize}
-    \item \tiny{tiny}
-  \end{itemize}
-}
+\begin{columns}[T]
+  \begin{column}[T]{6cm}
+    \textbf{Beamer} is a \LaTeX document class for creating slides for presentations.
+    \begin{block}{Demo code}
+      \small{qplot(Sepal.Length, Petal.Length, data = iris, colour = Species)}
+    \end{block}
+  \end{column}
+  \begin{column}[T]{5.5cm}
+    %\includegraphics[height = 6cm]{demo_iris_plot.png}
+  \end{column}
+\end{columns}
 
-## Check font size
+##\faFile Microsoft Word or \LaTeX ?
 
-\center{
-  Default 22 pt\\(see line 18 in this file)
-  
-  \begin{itemize}
-    \item \Large{Large}, \LARGE{LARGE}
-    \item \huge{huge}, \Huge{Huge}
-  \end{itemize}
-}
+\LaTeX users significantly more often reported to enjoy their work with their respective software than Word users `r citep("10.1371/journal.pone.0115069")`.
+
+## \LaTeX Tips \faStar: Font size
+
+* \small{small} > \footnotesize{footnotesize} > \scriptsize{scriptsize} > \tiny{tiny}
+* \normalsize{default}
+* \large{large} < \Large{Large} < \LARGE{LARGE} < \huge{huge} < \Huge{Huge}
+
+## \LaTeX Tips \faStar: more tips
+
+Link: \href{http://github.com/uribo/lab.note}{lab.note} package
+
+## \faBook Reference
+
+* `r citet("10.1371/journal.pone.0115069")`
+* [Presentations with Beamer](http://rmarkdown.rstudio.com/beamer_presentation_format.html)
+* [LaTeX/Presentations - Wikibooks, open books for an open world](http://en.wikibooks.org/wiki/LaTeX/Presentations)
+
+## Sessioninfo \faCogs `r R.Version()$version.string`
+
+### Non base attached Package
+
+```{r session, size = 'tiny'}
+sessionInfo() %$% otherPkgs %>% names 
+```
+\flushright{Enjoy \faCoffee}
 
 ## References
