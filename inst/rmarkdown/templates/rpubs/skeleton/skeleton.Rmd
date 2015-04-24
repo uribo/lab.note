@@ -1,12 +1,12 @@
 ---
-# THEME: RPubs by lab.note ver. 0.6.0
+# THEME: RPubs by lab.note ver. 0.6.1
 title: "Change the title"
 author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 ---
 
-```{r [USING_PKG], echo = TRUE, message = FALSE}
+```{r [SETTING], echo = TRUE, message = FALSE}
 library(dplyr)
 library(ggplot2); library(ggthemr)
 library(ggvis); library(shiny); library(DT)

@@ -1,5 +1,5 @@
 ---
-# THEME: Report by lab.note ver. 0.6.0
+# THEME: Report by lab.note ver. 0.6.1
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -28,7 +28,7 @@ monofont: Ricty
 ---
 \onmline
 
-```{r [OPTIONS], include = FALSE}
+```{r [SETTING], include = FALSE}
 ### global options
 options(width = 90, xtable.size = "footnotesize",
         xtable.comment          = FALSE, xtable.caption.placement = "top",
@@ -41,7 +41,7 @@ opts_chunk$set(chace    = FALSE, echo      = FALSE, message  = FALSE, warning   
 theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```
 
-```{r [USING_PKG]}
+```{r [IMPORTS]}
 library(rmarkdown); library(knitr); library(magrittr)
 library(ggplot2)
 library(dplyr, warn.conflicts = FALSE) # A Grammar of Data Manipulation.

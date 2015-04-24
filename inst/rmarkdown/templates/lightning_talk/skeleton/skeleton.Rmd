@@ -1,5 +1,5 @@
 ---
-# THEME: Lighting talk by lab.note ver. 0.6.0
+# THEME: Lighting talk by lab.note ver. 0.6.1
 title: For LT \textcolor{Black1}{\faBolt} theme
 subtitle: 
 author: \faTwitter @u_ribo
@@ -44,7 +44,7 @@ urlcolor: red
 citecolor: Black1
 ---
 
-```{r [OPTIONS], child = "document_setting.Rmd"}
+```{r [SETTING], child = "document_setting.Rmd"}
 ```
 
 ## R + Markdown + \LaTeX
