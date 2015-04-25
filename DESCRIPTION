@@ -1,8 +1,8 @@
 Package: lab.note
 Type: Package
 Title: Create laboratory note and presentation using rmarkdown.
-Version: 0.6.1
-Date: 2015-04-24
+Version: 0.6.2
+Date: 2015-04-25
 Authors@R: person("Shinya", "Uryu", email = paste("suika1127", "gmail.com", sep = "@"), role = c("aut", "cre"))
 URL: https://github.com/uribo/lab.note
 BugReports: https://github.com/uribo/lab.note/issues

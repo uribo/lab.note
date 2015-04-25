@@ -1,5 +1,5 @@
 ---
-# THEME: Seminar by lab.note ver. 0.6.1
+# THEME: Seminar by lab.note ver. 0.6.2
 title: Change the title
 subtitle: 
 author: \faTwitter @u_ribo
