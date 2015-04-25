@@ -1,5 +1,5 @@
 ---
-# THEME: Report by lab.note ver. 0.6.1
+# THEME: Report by lab.note ver. 0.6.2
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -47,9 +47,8 @@ theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```{r [IMPORTS]}
 library(rmarkdown); library(knitr); library(magrittr)
 library(ggplot2)
-library(dplyr, warn.conflicts = FALSE) # A Grammar of Data Manipulation.
-library(xtable) # Export tables to LaTeX or HTML.
-library(broom) # Convert Statistical Analysis Objects Into Tidy Data Frames.
+library(dplyr, warn.conflicts = FALSE); library(tidyr)
+library(xtable); library(broom)
 ```
 
 \HLT{\faStarEmpty highlight \faStar}
