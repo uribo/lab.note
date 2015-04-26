@@ -2,8 +2,23 @@ Package: lab.note
 Type: Package
 Title: Create laboratory note and presentation using rmarkdown.
 Version: 0.6.2
-Date: 2015-04-25
-Authors@R: person("Shinya", "Uryu", email = paste("suika1127", "gmail.com", sep = "@"), role = c("aut", "cre"))
+Date: 2015-04-26
+Authors@R: person("Shinya", "Uryu", email = "suika1127@gmail.com", role = c("aut", "cre"))
+Imports:
+  knitr,
+  rmarkdown
+Suggests: 
+  broom,
+  dplyr, 
+  DT,
+  ggplot2,
+  ggthemr,
+  ggvis,
+  knitcitations,
+  magrittr,
+  shiny,
+  tidyr,
+  xtable
 URL: https://github.com/uribo/lab.note
 BugReports: https://github.com/uribo/lab.note/issues
 Description: Make it can reproducibe rmarkdown document.
