@@ -4,7 +4,7 @@
 \alias{gallery_view}
 \title{listup image files}
 \usage{
-gallery_view(path = getwd(), ...)
+gallery_view(path = getwd())
 }
 \description{
 listup image files

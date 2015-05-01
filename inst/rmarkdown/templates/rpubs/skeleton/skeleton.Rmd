@@ -8,8 +8,8 @@ output: html_document
 
 ```{r [SETTING], echo = TRUE, message = FALSE}
 library(dplyr)
-library(ggplot2); library(ggthemr)
-library(ggvis); library(shiny); library(DT)
+library(ggplot2)#; library(ggthemr)
+library(ggvis); library(shiny)#; library(DT)
 ```
 
 Stay gold...
