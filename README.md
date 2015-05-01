@@ -1,11 +1,11 @@
-# Lab Note
+# lab.note
 
 [![Build Status](https://travis-ci.org/uribo/lab.note.svg?branch=master)](https://travis-ci.org/uribo/lab.note)
 [![](http://www.r-pkg.org/badges/version/lab.note)](http://cran.rstudio.com/web/packages/lab.note/index.html)
 
 ## Overview
 
-`lab.note` package is `.Rmd` file template for writing reproducible document (ex report, presentation).
+`lab.note` package is `.Rmd` file template for writing reproducible document (ex. report, presentation).
 
 see. [RMarkdown](http://rmarkdown.rstudio.com/)
 
@@ -30,6 +30,7 @@ pls installed these packages.
     * `fancy`
     * `fontspec`
     * `fontawesome`
+    * `rotating`
     * `scrextend`
 * **R**
     * `DT`
@@ -50,7 +51,7 @@ pls installed these packages.
 
 1. File -> New File -> R Markdown...
 2. From template... loading template files
-3. Choose `Laboratory note (PDF)`
+3. Choose `Laboratory note and report (PDF)`
 
 #### From console
 
@@ -77,13 +78,13 @@ It is a good use!
 
 ## Preview
 
-Basic report (PDF)
+Report (PDF)
 
-![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_basic_report.png)
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_report.png)
 
 Seminar (PDF, Beamer)
 
-![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_seminar_jp.png)
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_seminar.png)
 
 Image gallery (HTML)
 
