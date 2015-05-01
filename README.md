@@ -1,5 +1,8 @@
 # Lab Note
 
+[![Build Status](https://travis-ci.org/uribo/lab.note.svg?branch=master)](https://travis-ci.org/uribo/lab.note)
+[![](http://www.r-pkg.org/badges/version/lab.note)](http://cran.rstudio.com/web/packages/lab.note/index.html)
+
 ## Overview
 
 `lab.note` package is `.Rmd` file template for writing reproducible document (ex report, presentation).
