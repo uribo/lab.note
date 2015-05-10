@@ -64,17 +64,17 @@ pls installed these packages.
     * `rotating`
     * `scrextend`
 * **R**
-    * `DT`
-    * `rmarkdown`
-    * `knitr`
-    * `ggplot2`
-    * `ggvis`
-    * `magrittr`
-    * `dplyr`
-    * `xtable`
-    * `broom`
-    * `knitcitations`
-    * [`ggthemr`](https://github.com/cttobin/ggthemr)
+    * `DT`: ~~CRAN~~; [GitHub](https://github.com/rstudio/DT)
+    * `rmarkdown`: [CRAN](http://cran.r-project.org/web/packages/rmarkdown/index.html); [GitHub](https://github.com/rstudio/rmarkdown)
+    * `knitr`: [CRAN](http://cran.r-project.org/web/packages/knitr/index.html); [GitHub](https://github.com/yihui/knitr)
+    * `ggplot2`: [CRAN](http://cran.r-project.org/web/packages/ggplot2/index.html); [GitHub](https://github.com/hadley/ggplot2)
+    * `ggvis`: [CRAN](http://cran.r-project.org/web/packages/ggvis/index.html); [GitHub](https://github.com/rstudio/ggvis)
+    * `magrittr`: [CRAN](http://cran.r-project.org/web/packages/magrittr/index.html); [GitHub](https://github.com/smbache/magrittr)
+    * `dplyr`: [CRAN](http://cran.r-project.org/web/packages/dplyr/index.html); [GitHub](https://github.com/hadley/dplyr)
+    * `xtable`: [CRAN](http://cran.r-project.org/web/packages/xtable/index.html)
+    * `broom`: [CRAN](http://cran.r-project.org/web/packages/broom/index.html); [GitHub](https://github.com/dgrtwo/broom)
+    * `knitcitations`: [CRAN](http://cran.r-project.org/web/packages/knitcitations/index.html); [GitHub](https://github.com/cboettig/knitcitations)
+    * `ggthemr`: [CRAN](http://cran.r-project.org/web/packages/ggthemes/index.html); [GitHub](https://github.com/cttobin/ggthemr)
 
 ## Preview
 
