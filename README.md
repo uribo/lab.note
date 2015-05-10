@@ -5,9 +5,7 @@
 
 ## Overview
 
-`lab.note` package is `.Rmd` file template for writing reproducible document (ex. report, presentation).
-
-see. [RMarkdown](http://rmarkdown.rstudio.com/)
+The `lab.note` package is `.Rmd` file that customise template for writing reproducible document (ex. report, presentation). See more information about [RMarkdown](http://rmarkdown.rstudio.com/).
 
 ## Motivation
 
