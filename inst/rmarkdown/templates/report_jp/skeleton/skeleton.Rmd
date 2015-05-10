@@ -48,7 +48,7 @@ theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```{r [IMPORTS]}
 library(rmarkdown); library(knitr); library(magrittr)
 library(ggplot2)
-library(dplyr, warn.conflicts = FALSE); library(tidyr)
+library(dplyr); library(tidyr)
 library(xtable); library(broom)
 ```
 

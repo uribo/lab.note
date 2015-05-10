@@ -21,7 +21,7 @@ opts_chunk$set(
   dpi        = 150)
 ### Using Packages ###
 library(magrittr)
-library(dplyr, warn.conflicts = FALSE)
+library(dplyr)
 library(knitcitations)
 library(ggplot2)
 library(xtable)
