@@ -6,6 +6,9 @@
 \usage{
 gallery_view(path = getwd())
 }
+\arguments{
+\item{path}{location of the figure include folder}
+}
 \description{
 listup image files
 }
