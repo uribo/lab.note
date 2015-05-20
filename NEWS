@@ -1,6 +1,17 @@
+# lab.note 0.7.0
+
+## New Feature
+
+* add vignettes file.
+* `natbib`... `report`, `seminar` and `lightning_talk` template.
+
+## Theme Change
+
+* Merge `report for Japanese` theme to `report` theme.
+
 # lab.note 0.6.0
 
-## Theme
+## Theme Change
 
 * New theme "RPubs"
 
@@ -13,4 +24,3 @@
 # lab.note 0.2.0
 
 # lab.note 0.1.0
-
