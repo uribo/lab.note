@@ -1,5 +1,5 @@
 ---
-# THEME: Image Gallery by lab.note ver. 0.6.3
+# THEME: Image Gallery by lab.note ver. 0.6.4
 title: "Image Gallery"
 author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
