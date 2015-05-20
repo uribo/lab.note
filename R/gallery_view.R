@@ -1,7 +1,7 @@
 #' listup image files
 #' 
 #' @usage gallery_view(path = getwd())
-#' @param path location of the figure include folder
+#' @param path location of the figure include folder. Deafault value is working directory.
 #' @export
 gallery_view <- function(path = getwd()) {
   files <- list.files(path, recursive = TRUE, full.names = TRUE) 
