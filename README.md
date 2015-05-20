@@ -78,15 +78,15 @@ pls installed these packages.
 
 Report (PDF)
 
-[![]](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_report.png)
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_report.png)
 
 Seminar (PDF, Beamer)
 
-[![]](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_seminar.png)
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_seminar.png)
 
 Image gallery (HTML)
 
-[![]](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_image_gallery.png)
+![](https://github.com/uribo/lab.note/raw/master/inst/assets/img/preview_image_gallery.png)
 
 ## Another .Rmd skeleton template packages
 
