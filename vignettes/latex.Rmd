@@ -1,0 +1,78 @@
+---
+title: "Power of associate R Markdown with LaTeX"
+author: "Shinya Uryu"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+R + Markdown + LaTeX = **POWERFUL**
+
+# Font
+
+## Size
+
+```tex
+\small{small} > \footnotesize{footnotesize} > \scriptsize{scriptsize} > \tiny{tiny}
+\normalsize{default}
+\large{large} < \Large{Large} < \LARGE{LARGE} < \huge{huge} < \Huge{Huge}
+```
+
+more than large font size.
+
+```YAML
+header-includes
+  - \usepackage{scrextend}
+  - \changefontsizes{22pt}
+```
+
+## Cite
+
+Using `natbib` package.
+
+* `\citealt`
+* `\citep`
+* `\citet`
+
+## Using favorite font
+
+The `fontspec` package provide more flexible font style. 
+
+In `report` and `presentation` template, defined by YAML header.
+
+```YAML
+header-includes
+  - \usepackage{fontspec}
+mainfont: Times New Roman
+monofont: Ricty
+```
+
+You can change these font that installed your computer (e.g. `Helvetica`, `xkcd` etc.).
+
+### Font Awesome
+
+Nice. You can using [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icon by [`fontawesome`](https://www.ctan.org/pkg/fontawesome) package.
+
+```YAML
+header-includes
+  - \usepackage{fontspec, fontawesome}
+```
+
+```tex
+Hello, \faGlobe
+\faCoffee
+\faHandLeft
+```
+
+Style: `fa` + `iconname`
+
+More icon
+
+```tex
+\providecommand\faTree{{\FA\symbol{"F1BB}}} % http://fortawesome.github.io/Font-Awesome/icon/tree/
+
+\faTree % \FA\symbol{UNICODE}
+```

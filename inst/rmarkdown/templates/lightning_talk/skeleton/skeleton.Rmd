@@ -1,5 +1,5 @@
 ---
-# THEME: Lighting talk by lab.note ver. 0.6.4
+# THEME: Lighting talk by lab.note ver. 0.7.0
 title: For LT \textcolor{Black1}{\faBolt} theme
 subtitle: 
 author: \faTwitter @u_ribo
@@ -11,8 +11,9 @@ header-includes:
     - \definecolor{Blue1}{RGB}{48, 122, 190} \definecolor{Blue2}{RGB}{99, 151, 205}
     - \definecolor{Grey1}{RGB}{164, 173, 185}
 # using package, setup
-    - \usepackage{zxjatype}
-    - \setjamainfont{Hiragino Kaku Gothic Pro}
+    - \usepackage{natbib}
+#    - \usepackage{zxjatype}
+#    - \setjamainfont{Hiragino Kaku Gothic Pro}
     - \usepackage{fontspec, fontawesome} # require installed FontAwesome
     - \usepackage{scrextend}
     - \changefontsizes{22pt}
@@ -35,8 +36,7 @@ output:
     keep_tex: true
     pandoc_args:
      ["--latex-engine=xelatex"]
-# bibliography: bibliography.bib
-## ref) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+# bibliography: bibliography.bib ## ref) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 mainfont: Helvetica Neue
 monofont: Ricty
 linkcolor: blue
