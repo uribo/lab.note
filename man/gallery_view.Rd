@@ -7,7 +7,7 @@
 gallery_view(path = getwd())
 }
 \arguments{
-\item{path}{location of the figure include folder}
+\item{path}{location of the figure include folder. Deafault value is working directory.}
 }
 \description{
 listup image files

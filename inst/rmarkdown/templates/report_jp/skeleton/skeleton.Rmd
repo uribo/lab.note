@@ -1,5 +1,5 @@
 ---
-# THEME: Report by lab.note ver. 0.6.3
+# THEME: Report by lab.note ver. 0.6.4
 title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -46,7 +46,6 @@ theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```
 
 ```{r [IMPORTS]}
-library(rmarkdown); library(knitr); library(magrittr)
 library(ggplot2)
 library(dplyr); library(tidyr)
 library(xtable); library(broom)
