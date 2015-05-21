@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/uribo/lab.note.svg?branch=master)](https://travis-ci.org/uribo/lab.note)
 [![](http://www.r-pkg.org/badges/version/lab.note)](http://cran.rstudio.com/web/packages/lab.note/index.html)
-
 ![icon](https://github.com/uribo/lab.note/raw/master/inst/assets/img/icon.png)
 
 ## Overview
@@ -41,11 +40,12 @@ rmarkdown::draft("MyReport.Rmd", template = "report", package = "lab.note")
 
 ## Template
 
-1. Laboratory note
-2. Beamer for Japanese
-3. LT presentation for Japanese
+1. Laboratory note and report
+2. Presentation
+    2.1. seminar presentation
+    2.2. LT presentation
 4. Image gallery
-5. Rpubs
+5. For published to Rpubs
 
 ### Dependence Package
 
