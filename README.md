@@ -1,7 +1,9 @@
-# lab.note ![icon](https://github.com/uribo/lab.note/raw/master/inst/assets/img/icon.png)
+# lab.note
 
 [![Build Status](https://travis-ci.org/uribo/lab.note.svg?branch=master)](https://travis-ci.org/uribo/lab.note)
 [![](http://www.r-pkg.org/badges/version/lab.note)](http://cran.rstudio.com/web/packages/lab.note/index.html)
+
+![icon](https://github.com/uribo/lab.note/raw/master/inst/assets/img/icon.png)
 
 ## Overview
 
