@@ -1,5 +1,5 @@
 ---
-# THEME: RPubs by lab.note ver. 0.7.0
+# THEME: RPubs by lab.note ver. 0.8.0
 title: "Change the title"
 author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"

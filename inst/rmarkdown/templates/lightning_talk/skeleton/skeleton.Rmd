@@ -1,5 +1,5 @@
 ---
-# THEME: Lighting talk by lab.note ver. 0.7.0
+# THEME: Lighting talk by lab.note ver. 0.8.0
 title: For LT \textcolor{Black1}{\faBolt} theme
 subtitle: 
 author: \faTwitter @u_ribo
