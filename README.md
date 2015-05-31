@@ -46,6 +46,7 @@ rmarkdown::draft("MyReport.Rmd", template = "report", package = "lab.note")
     2.2. LT presentation
 4. Image gallery
 5. For published to Rpubs
+6. References note
 
 ### Dependence Package
 
