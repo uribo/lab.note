@@ -1,0 +1,47 @@
+---
+# THEME: literature by lab.note ver. 0.8.0
+title: "Change the topic theme"
+author: "your names"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+bibliography: references.bib
+# csl: # ref) https://github.com/citation-style-language/styles
+---
+
+```{r [SETTING], echo = TRUE, message = FALSE}
+library(knitcitations) # https://github.com/cboettig/knitcitations by Carl Boettiger
+```
+
+```{r make_bibtex, eval = FALSE}
+write.bibtex(entry = c(citation("knitr"),
+                       citation("knitcitations"),
+                       citation("rmarkdown")),
+             file = "references.bib")
+```
+
+```{r read_bibtex}
+bib <- read.bibtex(file = "references.bib")
+# read.bibtex(file = "inst/rmarkdown/templates/literature/skeleton/references.bib")
+names(bib)
+```
+
+## Style
+
+* `r citet(bib[1])`
+* `r citep("10.1890/11-0011.1")`
+
+## Bibliographies
+
+see) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+
+### Citation Syntax
+
+* [@xie2015knitr]
+* [-@xie2013dynamic]
+* @xie2014knitr
+
+# References
+
+```{r, results = 'asis', eval = FALSE}
+bib
+```
