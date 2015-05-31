@@ -21,7 +21,6 @@ write.bibtex(entry = c(citation("knitr"),
 
 ```{r read_bibtex}
 bib <- read.bibtex(file = "references.bib")
-# read.bibtex(file = "inst/rmarkdown/templates/literature/skeleton/references.bib")
 names(bib)
 ```
 
