@@ -3,6 +3,10 @@ Type: Package
 Title: Create Laboratory Note and Presentation Using R Markdown
 Version: 0.7.0
 Date: 2015-05-21
+Description: Make it can reproducible R Markdown report and other format 
+  such as presentation and RPubs published files. Contains built-in useful 
+  package using R and LaTeX. These packages usages to see vignettes and wiki 
+  more information.
 Authors@R: person("Shinya", "Uryu", email = "suika1127@gmail.com", role = c("aut", "cre"))
 Imports:
   knitr,
@@ -17,8 +21,8 @@ Suggests:
   shiny,
   tidyr,
   xtable
-VignetteBuilder: knitr
+VignetteBuilder: 
+  knitr
 URL: https://github.com/uribo/lab.note
 BugReports: https://github.com/uribo/lab.note/issues
-Description: Make it can reproducible R Markdown report and other format such as presentation and RPubs published files. Contains built-in useful package using R and LaTeX. These packages usages to see vignettes and wiki more information.
 License: MIT + file LICENSE
