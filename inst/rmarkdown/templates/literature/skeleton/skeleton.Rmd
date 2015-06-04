@@ -1,7 +1,6 @@
 ---
 # THEME: literature by lab.note ver. 0.8.0
 title: "Change the topic theme"
-author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 bibliography: references.bib
