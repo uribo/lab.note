@@ -38,6 +38,8 @@ see) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 * [-@xie2013dynamic]
 * @xie2014knitr
 
+-----
+
 # References
 
 ```{r, results = 'asis', eval = FALSE}
