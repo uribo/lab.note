@@ -1,5 +1,5 @@
 ---
-# THEME: literature by lab.note ver. 0.8.0
+# THEME: literature by lab.note ver. 0.8.1
 title: "Change the topic theme"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
