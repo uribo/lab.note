@@ -4,20 +4,20 @@ title: "Change the title"
 author: "Shinya Uryu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
-    - \usepackage{natbib}
-    - \usepackage{fancyhdr}
-    - \usepackage{fourier-orns}
-    - \usepackage{lscape}
-    - \usepackage{soul}
-    - \pagestyle{fancy}
-    - \usepackage{rotating}
-    - \usepackage{scrextend}
-    - \changefontsizes{12pt}
-#    - \usepackage{zxjatype} # Comment out when using Japanese.
-#    - \setjamainfont{Hiragino Kaku Gothic Pro} # Set for Japanese font.
-    - \lhead{\slshape \rightmark} \rhead{\slshape \today}
-    - \usepackage{fontspec, fontawesome} # require installed FontAwesome
-    - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
+  - \usepackage{natbib}
+  - \usepackage{fancyhdr}
+  - \usepackage{fourier-orns}
+  - \usepackage{lscape}
+  - \usepackage{soul}
+  - \pagestyle{fancy}
+  - \usepackage{rotating}
+  - \usepackage{scrextend}
+  - \changefontsizes{12pt}
+#  - \usepackage{zxjatype} # Comment out when using Japanese.
+#  - \setjamainfont{Hiragino Kaku Gothic Pro} # Set for Japanese font.
+  - \lhead{\slshape \rightmark} \rhead{\slshape \today}
+  - \usepackage{fontspec, fontawesome} # require installed FontAwesome
+  - \newcommand{\onmline}{{\LARGE \decofourleft \hspace{0.1cm} \hrulefill\hspace{0.2cm} \floweroneleft \floweroneright \hspace{0.2cm} \hrulefill \hspace{0.1cm} \decofourright}}
 output:
   pdf_document:
     latex_engine: xelatex
