@@ -32,7 +32,7 @@ monofont: Ricty
 ---
 \onmline
 
-```{r [SETTING], include = FALSE}
+```{r [SETTING], include = FALSE, cache = FALSE}
 ### global options
 options(width = 90, xtable.size = "footnotesize",
         xtable.comment          = FALSE, xtable.caption.placement = "top",
