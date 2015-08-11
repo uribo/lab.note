@@ -1,8 +1,8 @@
 Package: lab.note
 Type: Package
 Title: Create Laboratory Note and Presentation Using R Markdown
-Version: 0.8.2
-Date: 2015-07-17
+Version: 0.8.3
+Date: 2015-08-11
 Description: Make it can reproducible R Markdown report and other format 
   such as presentation and RPubs published files. Contains built-in useful 
   package using R and LaTeX. These packages usages to see vignettes and wiki 
