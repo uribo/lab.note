@@ -1,5 +1,5 @@
 ---
-# THEME: RPubs by lab.note ver. 0.8.2
+# THEME: RPubs by lab.note ver. 0.8.3
 title: "Change the title"
 author: "your names"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -7,6 +7,7 @@ output:
   html_document:
     theme: readable
     toc: false
+    css: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 ---
 
 ```{r [SETTING], echo = TRUE, message = FALSE}
@@ -15,4 +16,4 @@ library(ggplot2)#; library(ggthemr)
 library(ggvis); library(shiny)#; library(DT)
 ```
 
-Stay gold...
+Stay gold... <i class="fa fa-github"></i>
