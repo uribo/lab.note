@@ -4,8 +4,9 @@ title: "Change the topic theme"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: 
   html_document:
-    toc: true
-    toc_depth: 2
+    theme: readable
+    toc: false
+    css: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
 bibliography: references.bib
 # csl: # ref) https://github.com/citation-style-language/styles
 ---
@@ -26,16 +27,16 @@ bib <- read.bibtex(file = "references.bib")
 names(bib)
 ```
 
-## Style
+## :kimono: Style
 
 * `r citet(bib[1])`
 * `r citep("10.1890/11-0011.1")`
 
-## Bibliographies
+## :page_facing_up: Bibliographies
 
 see) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 
-### Citation Syntax
+### :anchor: Citation Syntax
 
 * [@xie2015knitr]
 * [-@xie2013dynamic]
@@ -43,7 +44,7 @@ see) http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 
 -----
 
-# References
+# :books: References
 
 ```{r, results = 'asis', eval = FALSE}
 bib

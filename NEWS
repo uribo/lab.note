@@ -1,5 +1,9 @@
 # lab.note 0.8.0
 
+## New Feature
+
+* Enable [`FontAwesome`](http://fortawesome.github.io/Font-Awesome/): `literature` and `rpubs`
+
 ## Theme Change
 
 * New theme "literature"
